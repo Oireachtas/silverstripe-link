@@ -15,7 +15,7 @@ use SilverStripe\Forms\TabSet;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\TreeDropdownField;
 use SilverStripe\ORM\DataObject;
-use SilverStripe\ORM\ValidationResult;
+use SilverStripe\Core\Validation\ValidationResult;
 use SilverStripe\Control\Director;
 use SilverStripe\CMS\Controllers\ContentController;
 use UncleCheese\DisplayLogic\Forms\Wrapper;
@@ -299,7 +299,7 @@ class Link extends DataObject
      * Validate
      * @return ValidationResult
      */
-    public function validate()
+    public function validate(): ValidationResult
     {
         $valid = true;
         $message = null;
