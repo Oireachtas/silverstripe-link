@@ -148,7 +148,7 @@ class Phone extends ModelData
     /**
      * @return HTML
      */
-    public function forTemplate()
+    public function forTemplate(): string
     {
         return $this->Render();
     }
