@@ -5,14 +5,14 @@ namespace gorriecoe\Link\View;
 use libphonenumber\PhoneNumberFormat;
 use libphonenumber\PhoneNumberUtil;
 use \libphonenumber\PhoneNumber;
-use SilverStripe\View\ViewableData;
+use SilverStripe\Model\ModelData;
 
 /**
  * Phone
  *
  * @package silverstripe-link
  */
-class Phone extends ViewableData
+class Phone extends ModelData
 {
     /**
      * @var \libphonenumber\PhoneNumberUtil
